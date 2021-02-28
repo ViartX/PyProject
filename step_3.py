@@ -81,19 +81,19 @@ print()
 
 # суммирование введенных чисел
 sum = 0
-quit = False
+is_exit = False
 while True:
-    if quit: break
+    if is_exit: break
     str = input(f'Введите сроку чисел, q - для выхода, текущая сумма {sum} : ')
     values_list = str.split()
     for i in range(0, len(values_list)):
         if values_list[i] == 'q':
-            quit = True
+            is_exit = True
             break
         elif values_list[i].isdigit():
             try:
                 value = float(values_list[i])
-                sum+=value
+                sum += value
             except ValueError:
                 continue
 
