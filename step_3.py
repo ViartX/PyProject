@@ -107,7 +107,7 @@ str_result = ""
 for i in range(0, len(str_list)):
     str_result += f_int(str_list[i]) + " "
 
-str_result = str_result[0: -1] # убираем последний пробел для чистоты эксперимента
+str_result = str_result[0: -1] # убираем последний пробел
 print(f"Результат : {str_result}")
 print()
 
